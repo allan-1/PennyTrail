@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct PasswordFieldComponent: View {
+    @State var password: String
+    @State private var isSecured: Bool = true
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .trailing){
+            if isSecured{
+                SecureField("", text: $password).autocorrectionDisabled()
+            }else{
+                TextField("", text: $password).autocorrectionDisabled()
+            }
+            Button{
+                isSecured.toggle()
+            }label:{
+                Image(systemName: isSecured ? "eye.slash" : "eye").tint(.black)
+            }.padding(.trailing, 4)
+        }.padding(.bottom, 28)
     }
 }
 
 #Preview {
-    PasswordFieldComponent()
+    PasswordFieldComponent(password: "")
 }
