@@ -9,7 +9,14 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color(hex:0xF8F4F0)
+            VStack{
+                SummaryCardComponent(cardTitle: "Current Balance", cardAmount: "0.00", cardColor: 0x000000, cardTitleColor: 0xFFFFFF, CardAmountColor: 0xFFFFFF)
+                SummaryCardComponent(cardTitle: "Income", cardAmount: "0.00")
+                SummaryCardComponent(cardTitle: "Expenses", cardAmount: "0.00")
+            }
+        }.background(Color(hex: 0xF8F4F0))
     }
 }
 
