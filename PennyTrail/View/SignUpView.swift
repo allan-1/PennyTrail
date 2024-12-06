@@ -42,7 +42,7 @@ struct SignUpView: View {
                 .cornerRadius(10)
                 .shadow(radius: 0)
                 .padding(.horizontal, 20).textFieldStyle(.roundedBorder)
-        }
+        }.background(Color(hex:0xF8F4F0))
     }
 }
 
