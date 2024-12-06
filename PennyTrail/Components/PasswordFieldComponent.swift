@@ -22,7 +22,7 @@ struct PasswordFieldComponent: View {
             }label:{
                 Image(systemName: isSecured ? "eye.slash" : "eye").tint(.black)
             }.padding(.trailing, 4)
-        }.padding(.bottom, 28)
+        }
     }
 }
 

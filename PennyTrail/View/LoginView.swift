@@ -18,7 +18,7 @@ struct LoginView: View {
                 Text("Email").foregroundStyle(Color(hex: 0x696968))
                 TextField("", text: $email).autocorrectionDisabled().padding(.bottom)
                 Text("Password").foregroundStyle(Color(hex: 0x696968))
-               PasswordFieldComponent(password: password)
+                PasswordFieldComponent(password: password).padding(.bottom, 28)
                 Button{
                 } label: {
                     Text("Login").fontWeight(.bold).frame(maxWidth: .infinity)
