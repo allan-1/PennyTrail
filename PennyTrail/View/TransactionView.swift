@@ -9,7 +9,19 @@ import SwiftUI
 
 struct TransactionView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            ZStack{
+                Color(hex:0xF8F4F0)
+            }.background(Color(hex:0xF8F4F0)).navigationTitle("Transactions").toolbar{
+                ToolbarItem(placement: .topBarTrailing){
+                    Button{
+                        
+                    }label: {
+                        Text("+ Transaction")
+                    }.buttonStyle(.borderedProminent).tint(.black)
+                }
+            }
+        }
     }
 }
 

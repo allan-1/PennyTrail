@@ -23,6 +23,11 @@
 		FA183D382D0C154C0065A61C /* BudgetComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D372D0C154C0065A61C /* BudgetComponent.swift */; };
 		FA183D3A2D0C33EC0065A61C /* RecurringComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D392D0C33EC0065A61C /* RecurringComponent.swift */; };
 		FA183D3C2D0C34330065A61C /* RecuuringItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D3B2D0C34330065A61C /* RecuuringItemComponent.swift */; };
+		FA183D3F2D0C3D030065A61C /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D3E2D0C3D030065A61C /* TransactionView.swift */; };
+		FA183D412D0C3D1E0065A61C /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D402D0C3D1E0065A61C /* BudgetView.swift */; };
+		FA183D442D0C3D4F0065A61C /* PotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D432D0C3D4F0065A61C /* PotsView.swift */; };
+		FA183D462D0C3D860065A61C /* RecurringBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D452D0C3D860065A61C /* RecurringBillView.swift */; };
+		FA183D482D0C3F2B0065A61C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D472D0C3F2B0065A61C /* MainView.swift */; };
 		FAC0CF262D01CA010063ADEC /* PasswordFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0CF252D01CA010063ADEC /* PasswordFieldComponent.swift */; };
 		FAF215912D034DD400031CA6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF215902D034DD400031CA6 /* SignUpView.swift */; };
 		FAF215932D036B4900031CA6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF215922D036B4900031CA6 /* HomeView.swift */; };
@@ -47,6 +52,11 @@
 		FA183D372D0C154C0065A61C /* BudgetComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetComponent.swift; sourceTree = "<group>"; };
 		FA183D392D0C33EC0065A61C /* RecurringComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringComponent.swift; sourceTree = "<group>"; };
 		FA183D3B2D0C34330065A61C /* RecuuringItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuuringItemComponent.swift; sourceTree = "<group>"; };
+		FA183D3E2D0C3D030065A61C /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		FA183D402D0C3D1E0065A61C /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		FA183D432D0C3D4F0065A61C /* PotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsView.swift; sourceTree = "<group>"; };
+		FA183D452D0C3D860065A61C /* RecurringBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringBillView.swift; sourceTree = "<group>"; };
+		FA183D472D0C3F2B0065A61C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FAC0CF252D01CA010063ADEC /* PasswordFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordFieldComponent.swift; sourceTree = "<group>"; };
 		FAF215902D034DD400031CA6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FAF215922D036B4900031CA6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -125,6 +135,11 @@
 				FA123E692D008B1800B67006 /* LoginView.swift */,
 				FAF215902D034DD400031CA6 /* SignUpView.swift */,
 				FAF215922D036B4900031CA6 /* HomeView.swift */,
+				FA183D3E2D0C3D030065A61C /* TransactionView.swift */,
+				FA183D402D0C3D1E0065A61C /* BudgetView.swift */,
+				FA183D432D0C3D4F0065A61C /* PotsView.swift */,
+				FA183D452D0C3D860065A61C /* RecurringBillView.swift */,
+				FA183D472D0C3F2B0065A61C /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,18 +259,23 @@
 				FA183D362D0C0FF20065A61C /* DonutChart.swift in Sources */,
 				FA183D332D0BF6C70065A61C /* TransactionComponent.swift in Sources */,
 				FAF215952D036BE300031CA6 /* SummaryCardComponent.swift in Sources */,
+				FA183D462D0C3D860065A61C /* RecurringBillView.swift in Sources */,
 				FA183D2D2D0AD24C0065A61C /* SavedComponets.swift in Sources */,
 				FA123E6A2D008B1800B67006 /* LoginView.swift in Sources */,
+				FA183D3F2D0C3D030065A61C /* TransactionView.swift in Sources */,
 				FA183D312D0B70950065A61C /* TransactionItemComponent.swift in Sources */,
 				FA183D2B2D0ACE650065A61C /* CardHeaderComponents.swift in Sources */,
 				FA183D292D0ACDD00065A61C /* PotsComponents.swift in Sources */,
+				FA183D412D0C3D1E0065A61C /* BudgetView.swift in Sources */,
 				FAF215932D036B4900031CA6 /* HomeView.swift in Sources */,
 				FA123E5A2D00816100B67006 /* ContentView.swift in Sources */,
 				FAC0CF262D01CA010063ADEC /* PasswordFieldComponent.swift in Sources */,
 				FA183D2F2D0AD9430065A61C /* SavedItemComponent.swift in Sources */,
 				FA123E582D00816100B67006 /* PennyTrailApp.swift in Sources */,
+				FA183D442D0C3D4F0065A61C /* PotsView.swift in Sources */,
 				FAF215912D034DD400031CA6 /* SignUpView.swift in Sources */,
 				FA183D382D0C154C0065A61C /* BudgetComponent.swift in Sources */,
+				FA183D482D0C3F2B0065A61C /* MainView.swift in Sources */,
 				FA123E6E2D00969400B67006 /* ColorsExtension.swift in Sources */,
 				FA183D3A2D0C33EC0065A61C /* RecurringComponent.swift in Sources */,
 				FA183D3C2D0C34330065A61C /* RecuuringItemComponent.swift in Sources */,
