@@ -17,8 +17,8 @@ struct SummaryCardComponent: View {
         VStack(alignment: .leading){
             Text(cardTitle).foregroundStyle(Color(hex: cardTitleColor)).padding(.horizontal).padding(.top).padding(.bottom, 8)
             Text("$\(cardAmount)").fontWeight(.bold).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).foregroundStyle(Color(hex: CardAmountColor)).padding(.horizontal).padding(.bottom, 20)
-        }.frame(maxWidth: .infinity, alignment: .leading).background(Color(hex: cardColor)).cornerRadius(10).shadow(radius: 0)
-            .padding(.horizontal, 20).textFieldStyle(.roundedBorder)
+        }.frame(maxWidth: .infinity, alignment: .leading).background(Color(hex: cardColor)).clipShape(RoundedRectangle(cornerRadius: 10)).shadow(radius: 0)
+            .padding(.horizontal, 20)
     }
 }
 

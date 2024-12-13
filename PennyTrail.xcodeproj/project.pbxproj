@@ -13,6 +13,16 @@
 		FA123E5F2D00816400B67006 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA123E5E2D00816400B67006 /* Preview Assets.xcassets */; };
 		FA123E6A2D008B1800B67006 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA123E692D008B1800B67006 /* LoginView.swift */; };
 		FA123E6E2D00969400B67006 /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA123E6D2D00969400B67006 /* ColorsExtension.swift */; };
+		FA183D292D0ACDD00065A61C /* PotsComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D282D0ACDD00065A61C /* PotsComponents.swift */; };
+		FA183D2B2D0ACE650065A61C /* CardHeaderComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D2A2D0ACE650065A61C /* CardHeaderComponents.swift */; };
+		FA183D2D2D0AD24C0065A61C /* SavedComponets.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D2C2D0AD24C0065A61C /* SavedComponets.swift */; };
+		FA183D2F2D0AD9430065A61C /* SavedItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D2E2D0AD9430065A61C /* SavedItemComponent.swift */; };
+		FA183D312D0B70950065A61C /* TransactionItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D302D0B70950065A61C /* TransactionItemComponent.swift */; };
+		FA183D332D0BF6C70065A61C /* TransactionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D322D0BF6C60065A61C /* TransactionComponent.swift */; };
+		FA183D362D0C0FF20065A61C /* DonutChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D352D0C0FF20065A61C /* DonutChart.swift */; };
+		FA183D382D0C154C0065A61C /* BudgetComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D372D0C154C0065A61C /* BudgetComponent.swift */; };
+		FA183D3A2D0C33EC0065A61C /* RecurringComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D392D0C33EC0065A61C /* RecurringComponent.swift */; };
+		FA183D3C2D0C34330065A61C /* RecuuringItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D3B2D0C34330065A61C /* RecuuringItemComponent.swift */; };
 		FAC0CF262D01CA010063ADEC /* PasswordFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0CF252D01CA010063ADEC /* PasswordFieldComponent.swift */; };
 		FAF215912D034DD400031CA6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF215902D034DD400031CA6 /* SignUpView.swift */; };
 		FAF215932D036B4900031CA6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF215922D036B4900031CA6 /* HomeView.swift */; };
@@ -27,6 +37,16 @@
 		FA123E5E2D00816400B67006 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FA123E692D008B1800B67006 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		FA123E6D2D00969400B67006 /* ColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
+		FA183D282D0ACDD00065A61C /* PotsComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsComponents.swift; sourceTree = "<group>"; };
+		FA183D2A2D0ACE650065A61C /* CardHeaderComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardHeaderComponents.swift; sourceTree = "<group>"; };
+		FA183D2C2D0AD24C0065A61C /* SavedComponets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedComponets.swift; sourceTree = "<group>"; };
+		FA183D2E2D0AD9430065A61C /* SavedItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemComponent.swift; sourceTree = "<group>"; };
+		FA183D302D0B70950065A61C /* TransactionItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionItemComponent.swift; sourceTree = "<group>"; };
+		FA183D322D0BF6C60065A61C /* TransactionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionComponent.swift; sourceTree = "<group>"; };
+		FA183D352D0C0FF20065A61C /* DonutChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutChart.swift; sourceTree = "<group>"; };
+		FA183D372D0C154C0065A61C /* BudgetComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetComponent.swift; sourceTree = "<group>"; };
+		FA183D392D0C33EC0065A61C /* RecurringComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringComponent.swift; sourceTree = "<group>"; };
+		FA183D3B2D0C34330065A61C /* RecuuringItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecuuringItemComponent.swift; sourceTree = "<group>"; };
 		FAC0CF252D01CA010063ADEC /* PasswordFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordFieldComponent.swift; sourceTree = "<group>"; };
 		FAF215902D034DD400031CA6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FAF215922D036B4900031CA6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -124,11 +144,29 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FA183D342D0C0FC90065A61C /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				FA183D352D0C0FF20065A61C /* DonutChart.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
 		FAC0CF242D01C9DE0063ADEC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FA183D342D0C0FC90065A61C /* Chart */,
 				FAC0CF252D01CA010063ADEC /* PasswordFieldComponent.swift */,
 				FAF215942D036BE300031CA6 /* SummaryCardComponent.swift */,
+				FA183D282D0ACDD00065A61C /* PotsComponents.swift */,
+				FA183D2A2D0ACE650065A61C /* CardHeaderComponents.swift */,
+				FA183D2C2D0AD24C0065A61C /* SavedComponets.swift */,
+				FA183D2E2D0AD9430065A61C /* SavedItemComponent.swift */,
+				FA183D302D0B70950065A61C /* TransactionItemComponent.swift */,
+				FA183D322D0BF6C60065A61C /* TransactionComponent.swift */,
+				FA183D372D0C154C0065A61C /* BudgetComponent.swift */,
+				FA183D392D0C33EC0065A61C /* RecurringComponent.swift */,
+				FA183D3B2D0C34330065A61C /* RecuuringItemComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -203,14 +241,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA183D362D0C0FF20065A61C /* DonutChart.swift in Sources */,
+				FA183D332D0BF6C70065A61C /* TransactionComponent.swift in Sources */,
 				FAF215952D036BE300031CA6 /* SummaryCardComponent.swift in Sources */,
+				FA183D2D2D0AD24C0065A61C /* SavedComponets.swift in Sources */,
 				FA123E6A2D008B1800B67006 /* LoginView.swift in Sources */,
+				FA183D312D0B70950065A61C /* TransactionItemComponent.swift in Sources */,
+				FA183D2B2D0ACE650065A61C /* CardHeaderComponents.swift in Sources */,
+				FA183D292D0ACDD00065A61C /* PotsComponents.swift in Sources */,
 				FAF215932D036B4900031CA6 /* HomeView.swift in Sources */,
 				FA123E5A2D00816100B67006 /* ContentView.swift in Sources */,
 				FAC0CF262D01CA010063ADEC /* PasswordFieldComponent.swift in Sources */,
+				FA183D2F2D0AD9430065A61C /* SavedItemComponent.swift in Sources */,
 				FA123E582D00816100B67006 /* PennyTrailApp.swift in Sources */,
 				FAF215912D034DD400031CA6 /* SignUpView.swift in Sources */,
+				FA183D382D0C154C0065A61C /* BudgetComponent.swift in Sources */,
 				FA123E6E2D00969400B67006 /* ColorsExtension.swift in Sources */,
+				FA183D3A2D0C33EC0065A61C /* RecurringComponent.swift in Sources */,
+				FA183D3C2D0C34330065A61C /* RecuuringItemComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
