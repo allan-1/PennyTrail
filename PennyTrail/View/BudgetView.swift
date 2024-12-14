@@ -9,7 +9,23 @@ import SwiftUI
 
 struct BudgetView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            ZStack{
+                Color(hex:0xF8F4F0)
+                ScrollView{
+                    BudgetSummary().padding(.bottom)
+                    BudgetItemDescription()
+                }
+            }.background(Color(hex:0xF8F4F0)).navigationTitle("Budgets").toolbar{
+                ToolbarItem(placement: .topBarTrailing){
+                    Button{
+                        
+                    }label: {
+                        Image(systemName: "plus.circle.fill").font(.title2)
+                    }.tint(.black)
+                }
+            }
+        }
     }
 }
 
