@@ -11,12 +11,15 @@ struct TransactionItemComponent: View {
     var body: some View {
         VStack{ 
             HStack{
-            Image(systemName: "person").resizable().frame(width: 35, height: 35).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-            Text("Allan Muturi").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Image("userimg").resizable().frame(width: 40, height: 40).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/).padding(.trailing)
+                VStack(alignment: .leading){
+                    Text("Allan Muturi").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    Text("Bills").font(.footnote).foregroundStyle(Color(hex: 0x696868))
+                }
             Spacer()
             VStack(alignment: .trailing){
                 Text("+$75.00").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).padding(.bottom, 4)
-                Text("19 Aug 2024").font(.footnote)
+                Text("19 Aug 2024").font(.footnote).foregroundStyle(Color(hex: 0x696868))
             }
         }
             Divider()
