@@ -17,6 +17,10 @@ class TransactionViewModel: ObservableObject{
         fetchTransactions()
     }
     
+    var totalAmount: Double {
+        transactions.reduce(0) { $0 + $1.amount }
+    }
+    
     func fetchTransactions(){
         do{
             transactions = try modelContext.fetch(FetchDescriptor<TransactionModel>())
