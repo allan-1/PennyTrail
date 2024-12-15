@@ -34,7 +34,7 @@ class TransactionViewModel: ObservableObject{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/YY"
         
-        let newTransaction = TransactionModel(id: UUID(), avatar: avatar, name: name, category: category, date:dateFormatter.string(from: date) , amount: amount, recurring: recurring)
+        let newTransaction = TransactionModel(avatar: avatar, name: name, category: category, date:dateFormatter.string(from: date) , amount: amount, recurring: recurring)
         modelContext.insert(newTransaction)
         saveTransaction()
         fetchTransactions()

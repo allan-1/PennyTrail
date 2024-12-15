@@ -27,7 +27,7 @@ class BudgetsViewModel: ObservableObject{
     }
     
     func addBudget(category: String, spent: Double, max: Double, theme: ThemeModel){
-        let newBudget = BudgetModel(id: UUID(), category: category, spent: spent, max: max, theme: theme)
+        let newBudget = BudgetModel(category: category, spent: spent, max: max, theme: theme)
         modelContext.insert(newBudget)
         saveBudget()
         fetchBudgets()

@@ -27,7 +27,7 @@ class PotsViewModel: ObservableObject{
     }
     
     func addPot(name: String, saved: Double, target: Double, theme: ThemeModel){
-        let newPot = PotsModel(id: UUID(), name: name, saved: saved, target: target, theme: theme)
+        let newPot = PotsModel(name: name, saved: saved, target: target, theme: theme)
         modelContext.insert(newPot)
         savePot()
         fetchPots()
