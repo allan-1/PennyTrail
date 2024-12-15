@@ -28,6 +28,23 @@
 		FA183D442D0C3D4F0065A61C /* PotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D432D0C3D4F0065A61C /* PotsView.swift */; };
 		FA183D462D0C3D860065A61C /* RecurringBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D452D0C3D860065A61C /* RecurringBillView.swift */; };
 		FA183D482D0C3F2B0065A61C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D472D0C3F2B0065A61C /* MainView.swift */; };
+		FA183D4A2D0C5ED00065A61C /* SearchFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D492D0C5ED00065A61C /* SearchFieldComponent.swift */; };
+		FA183D4D2D0C6EAF0065A61C /* BudgetSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D4C2D0C6EAF0065A61C /* BudgetSummary.swift */; };
+		FA183D4F2D0C6F500065A61C /* BudgetItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D4E2D0C6F500065A61C /* BudgetItemComponent.swift */; };
+		FA183D512D0C706F0065A61C /* BudgetSummaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D502D0C706F0065A61C /* BudgetSummaryItem.swift */; };
+		FA183D532D0C720D0065A61C /* BudgetItemDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D522D0C720D0065A61C /* BudgetItemDescription.swift */; };
+		FA183D562D0C7EAC0065A61C /* PotsViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D552D0C7EAC0065A61C /* PotsViewComponent.swift */; };
+		FA183D582D0C90800065A61C /* ComparableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D572D0C90800065A61C /* ComparableExtension.swift */; };
+		FA183D5B2D0DA5B70065A61C /* TotalBillsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D5A2D0DA5B70065A61C /* TotalBillsComponent.swift */; };
+		FA183D5D2D0DA9FD0065A61C /* RecurringSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D5C2D0DA9FD0065A61C /* RecurringSummary.swift */; };
+		FA183D5F2D0DAACE0065A61C /* BillComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D5E2D0DAACE0065A61C /* BillComponent.swift */; };
+		FA183D642D0DB1E90065A61C /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D632D0DB1E90065A61C /* TransactionModel.swift */; };
+		FA183D662D0DB2D70065A61C /* ThemeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D652D0DB2D70065A61C /* ThemeModel.swift */; };
+		FA183D682D0DB3400065A61C /* PotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D672D0DB3400065A61C /* PotsModel.swift */; };
+		FA183D6A2D0DB3A90065A61C /* BudgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D692D0DB3A90065A61C /* BudgetModel.swift */; };
+		FA183D6C2D0DC79A0065A61C /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D6B2D0DC79A0065A61C /* TransactionViewModel.swift */; };
+		FAA06FEA2D0F49370009249A /* PotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA06FE92D0F49370009249A /* PotsViewModel.swift */; };
+		FAA06FEC2D0F4C3E0009249A /* BudgetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA06FEB2D0F4C3E0009249A /* BudgetsViewModel.swift */; };
 		FAC0CF262D01CA010063ADEC /* PasswordFieldComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0CF252D01CA010063ADEC /* PasswordFieldComponent.swift */; };
 		FAF215912D034DD400031CA6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF215902D034DD400031CA6 /* SignUpView.swift */; };
 		FAF215932D036B4900031CA6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF215922D036B4900031CA6 /* HomeView.swift */; };
@@ -57,6 +74,23 @@
 		FA183D432D0C3D4F0065A61C /* PotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsView.swift; sourceTree = "<group>"; };
 		FA183D452D0C3D860065A61C /* RecurringBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringBillView.swift; sourceTree = "<group>"; };
 		FA183D472D0C3F2B0065A61C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FA183D492D0C5ED00065A61C /* SearchFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFieldComponent.swift; sourceTree = "<group>"; };
+		FA183D4C2D0C6EAF0065A61C /* BudgetSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSummary.swift; sourceTree = "<group>"; };
+		FA183D4E2D0C6F500065A61C /* BudgetItemComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetItemComponent.swift; sourceTree = "<group>"; };
+		FA183D502D0C706F0065A61C /* BudgetSummaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetSummaryItem.swift; sourceTree = "<group>"; };
+		FA183D522D0C720D0065A61C /* BudgetItemDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetItemDescription.swift; sourceTree = "<group>"; };
+		FA183D552D0C7EAC0065A61C /* PotsViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsViewComponent.swift; sourceTree = "<group>"; };
+		FA183D572D0C90800065A61C /* ComparableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableExtension.swift; sourceTree = "<group>"; };
+		FA183D5A2D0DA5B70065A61C /* TotalBillsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBillsComponent.swift; sourceTree = "<group>"; };
+		FA183D5C2D0DA9FD0065A61C /* RecurringSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringSummary.swift; sourceTree = "<group>"; };
+		FA183D5E2D0DAACE0065A61C /* BillComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillComponent.swift; sourceTree = "<group>"; };
+		FA183D632D0DB1E90065A61C /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		FA183D652D0DB2D70065A61C /* ThemeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeModel.swift; sourceTree = "<group>"; };
+		FA183D672D0DB3400065A61C /* PotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsModel.swift; sourceTree = "<group>"; };
+		FA183D692D0DB3A90065A61C /* BudgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetModel.swift; sourceTree = "<group>"; };
+		FA183D6B2D0DC79A0065A61C /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		FAA06FE92D0F49370009249A /* PotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsViewModel.swift; sourceTree = "<group>"; };
+		FAA06FEB2D0F4C3E0009249A /* BudgetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetsViewModel.swift; sourceTree = "<group>"; };
 		FAC0CF252D01CA010063ADEC /* PasswordFieldComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordFieldComponent.swift; sourceTree = "<group>"; };
 		FAF215902D034DD400031CA6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FAF215922D036B4900031CA6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -118,6 +152,10 @@
 		FA123E652D0089F700B67006 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA183D632D0DB1E90065A61C /* TransactionModel.swift */,
+				FA183D652D0DB2D70065A61C /* ThemeModel.swift */,
+				FA183D672D0DB3400065A61C /* PotsModel.swift */,
+				FA183D692D0DB3A90065A61C /* BudgetModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +163,9 @@
 		FA123E662D008A0500B67006 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				FA183D6B2D0DC79A0065A61C /* TransactionViewModel.swift */,
+				FAA06FE92D0F49370009249A /* PotsViewModel.swift */,
+				FAA06FEB2D0F4C3E0009249A /* BudgetsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -148,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				FA123E6D2D00969400B67006 /* ColorsExtension.swift */,
+				FA183D572D0C90800065A61C /* ComparableExtension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -167,9 +209,41 @@
 			path = Chart;
 			sourceTree = "<group>";
 		};
+		FA183D4B2D0C6E8D0065A61C /* Budget */ = {
+			isa = PBXGroup;
+			children = (
+				FA183D4C2D0C6EAF0065A61C /* BudgetSummary.swift */,
+				FA183D4E2D0C6F500065A61C /* BudgetItemComponent.swift */,
+				FA183D502D0C706F0065A61C /* BudgetSummaryItem.swift */,
+				FA183D522D0C720D0065A61C /* BudgetItemDescription.swift */,
+			);
+			path = Budget;
+			sourceTree = "<group>";
+		};
+		FA183D542D0C7E830065A61C /* Pots */ = {
+			isa = PBXGroup;
+			children = (
+				FA183D552D0C7EAC0065A61C /* PotsViewComponent.swift */,
+			);
+			path = Pots;
+			sourceTree = "<group>";
+		};
+		FA183D592D0DA58A0065A61C /* recurring bills */ = {
+			isa = PBXGroup;
+			children = (
+				FA183D5A2D0DA5B70065A61C /* TotalBillsComponent.swift */,
+				FA183D5C2D0DA9FD0065A61C /* RecurringSummary.swift */,
+				FA183D5E2D0DAACE0065A61C /* BillComponent.swift */,
+			);
+			path = "recurring bills";
+			sourceTree = "<group>";
+		};
 		FAC0CF242D01C9DE0063ADEC /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				FA183D592D0DA58A0065A61C /* recurring bills */,
+				FA183D542D0C7E830065A61C /* Pots */,
+				FA183D4B2D0C6E8D0065A61C /* Budget */,
 				FA183D342D0C0FC90065A61C /* Chart */,
 				FAC0CF252D01CA010063ADEC /* PasswordFieldComponent.swift */,
 				FAF215942D036BE300031CA6 /* SummaryCardComponent.swift */,
@@ -182,6 +256,7 @@
 				FA183D372D0C154C0065A61C /* BudgetComponent.swift */,
 				FA183D392D0C33EC0065A61C /* RecurringComponent.swift */,
 				FA183D3B2D0C34330065A61C /* RecuuringItemComponent.swift */,
+				FA183D492D0C5ED00065A61C /* SearchFieldComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -257,22 +332,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA183D362D0C0FF20065A61C /* DonutChart.swift in Sources */,
+				FA183D6A2D0DB3A90065A61C /* BudgetModel.swift in Sources */,
 				FA183D332D0BF6C70065A61C /* TransactionComponent.swift in Sources */,
+				FA183D4A2D0C5ED00065A61C /* SearchFieldComponent.swift in Sources */,
+				FA183D582D0C90800065A61C /* ComparableExtension.swift in Sources */,
+				FAA06FEA2D0F49370009249A /* PotsViewModel.swift in Sources */,
 				FAF215952D036BE300031CA6 /* SummaryCardComponent.swift in Sources */,
 				FA183D462D0C3D860065A61C /* RecurringBillView.swift in Sources */,
 				FA183D2D2D0AD24C0065A61C /* SavedComponets.swift in Sources */,
+				FA183D662D0DB2D70065A61C /* ThemeModel.swift in Sources */,
 				FA123E6A2D008B1800B67006 /* LoginView.swift in Sources */,
 				FA183D3F2D0C3D030065A61C /* TransactionView.swift in Sources */,
 				FA183D312D0B70950065A61C /* TransactionItemComponent.swift in Sources */,
+				FA183D4F2D0C6F500065A61C /* BudgetItemComponent.swift in Sources */,
 				FA183D2B2D0ACE650065A61C /* CardHeaderComponents.swift in Sources */,
+				FA183D562D0C7EAC0065A61C /* PotsViewComponent.swift in Sources */,
+				FA183D6C2D0DC79A0065A61C /* TransactionViewModel.swift in Sources */,
 				FA183D292D0ACDD00065A61C /* PotsComponents.swift in Sources */,
 				FA183D412D0C3D1E0065A61C /* BudgetView.swift in Sources */,
+				FA183D4D2D0C6EAF0065A61C /* BudgetSummary.swift in Sources */,
+				FA183D5D2D0DA9FD0065A61C /* RecurringSummary.swift in Sources */,
+				FA183D5B2D0DA5B70065A61C /* TotalBillsComponent.swift in Sources */,
+				FA183D5F2D0DAACE0065A61C /* BillComponent.swift in Sources */,
 				FAF215932D036B4900031CA6 /* HomeView.swift in Sources */,
 				FA123E5A2D00816100B67006 /* ContentView.swift in Sources */,
 				FAC0CF262D01CA010063ADEC /* PasswordFieldComponent.swift in Sources */,
+				FA183D512D0C706F0065A61C /* BudgetSummaryItem.swift in Sources */,
+				FAA06FEC2D0F4C3E0009249A /* BudgetsViewModel.swift in Sources */,
 				FA183D2F2D0AD9430065A61C /* SavedItemComponent.swift in Sources */,
+				FA183D642D0DB1E90065A61C /* TransactionModel.swift in Sources */,
 				FA123E582D00816100B67006 /* PennyTrailApp.swift in Sources */,
+				FA183D532D0C720D0065A61C /* BudgetItemDescription.swift in Sources */,
 				FA183D442D0C3D4F0065A61C /* PotsView.swift in Sources */,
+				FA183D682D0DB3400065A61C /* PotsModel.swift in Sources */,
 				FAF215912D034DD400031CA6 /* SignUpView.swift in Sources */,
 				FA183D382D0C154C0065A61C /* BudgetComponent.swift in Sources */,
 				FA183D482D0C3F2B0065A61C /* MainView.swift in Sources */,
