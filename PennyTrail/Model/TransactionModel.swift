@@ -18,7 +18,7 @@ class TransactionModel{
     var amount: Double
     var recurring: Bool
     
-    init(id: UUID, avatar: String, name: String, category: String, date: String, amount: Double, recurring: Bool) {
+    init(id: UUID = UUID(), avatar: String, name: String, category: String, date: String, amount: Double, recurring: Bool) {
         self.id = id
         self.avatar = avatar
         self.name = name

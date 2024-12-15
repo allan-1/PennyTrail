@@ -16,7 +16,7 @@ class BudgetModel{
     var max: Double
     @Relationship var theme: ThemeModel
     
-    init(id: UUID, category: String, spent: Double, max: Double, theme: ThemeModel) {
+    init(id: UUID = UUID(), category: String, spent: Double, max: Double, theme: ThemeModel) {
         self.id = id
         self.category = category
         self.spent = spent

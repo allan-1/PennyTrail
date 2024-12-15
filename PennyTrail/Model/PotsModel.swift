@@ -16,7 +16,7 @@ class PotsModel{
     var target: Double
     @Relationship var theme: ThemeModel
     
-    init(id: UUID, name: String, saved: Double, target: Double, theme: ThemeModel) {
+    init(id: UUID = UUID(), name: String, saved: Double, target: Double, theme: ThemeModel) {
         self.id = id
         self.name = name
         self.saved = saved

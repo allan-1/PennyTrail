@@ -14,7 +14,7 @@ class ThemeModel{
     var name: String
     var color: Int
     
-    init(id: UUID, name: String, color: Int) {
+    init(id: UUID = UUID(), name: String, color: Int) {
         self.id = id
         self.name = name
         self.color = color
