@@ -17,7 +17,7 @@ class TransactionViewModel: ObservableObject{
         fetchTransactions()
     }
     
-    var totalAmount: Double {
+    var totalTransactionAmount: Double {
         transactions.reduce(0) { $0 + $1.amount }
     }
     
