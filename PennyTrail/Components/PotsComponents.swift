@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct PotsComponents: View {
-    let items = ["Car", "Vacation", "MMF"]
+    let potItems: [PotsModel]
+    var totalSaved: Double
     let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -16,9 +17,9 @@ struct PotsComponents: View {
     var body: some View {
         VStack{
             CardHeaderComponents(titleText: "Pots", buttonText: "See Details", buttonAction: {}).padding()
-            SavedComponets(amountSaved: "1,000")
+            SavedComponets(amountSaved: "\(totalSaved)")
             LazyVGrid(columns: columns, spacing: 16){
-                ForEach(items, id: \.self){
+                ForEach(potItems, id: \.id){
                     item in SavedItemComponent().padding(.horizontal)
                 }
             }.padding(.bottom)
@@ -30,6 +31,6 @@ struct PotsComponents: View {
     }
 }
 
-#Preview {
-    PotsComponents()
-}
+//#Preview {
+//    PotsComponents()
+//}

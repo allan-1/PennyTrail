@@ -9,6 +9,8 @@ import SwiftUI
 import Charts
 
 struct DonutChart: View {
+    var spent: Double
+    var totalMax: Double
     var chartData = [4000, 9600, 2500, 1000]
     var total: Int{
         chartData.reduce(0, +)
@@ -24,13 +26,13 @@ struct DonutChart: View {
                 }
             }.frame(width: 300, height: 300)
             VStack {
-                Text("$480").font(.largeTitle).bold()
-                Text("of \(total) limit").font(.caption).foregroundStyle(Color(.gray))
+                Text("\(spent)").font(.largeTitle).bold()
+                Text("of \(totalMax) limit").font(.caption).foregroundStyle(Color(.gray))
             }
         }
     }
 }
 
-#Preview {
-    DonutChart()
-}
+//#Preview {
+//    DonutChart()
+//}

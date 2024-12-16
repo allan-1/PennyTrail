@@ -10,7 +10,7 @@ import SwiftUI
 struct BudgetSummary: View {
     var body: some View {
         VStack{
-            DonutChart().padding()
+            DonutChart(spent: 0.0, totalMax: 0.0).padding()
             VStack(alignment: .leading){
                 Text("Spending Summary").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 BudgetSummaryItem()

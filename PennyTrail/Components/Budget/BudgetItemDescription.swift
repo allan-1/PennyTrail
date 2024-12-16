@@ -26,7 +26,7 @@ struct BudgetItemDescription: View {
                 SavedItemComponent()
                 SavedItemComponent()
             }.padding()
-            TransactionComponent(titleText: "Latest Spending", buttonText: "View All", backcolor: 0xF8F4F0).padding(.bottom)
+            TransactionComponent(titleText: "Latest Spending", buttonText: "View All", backcolor: 0xF8F4F0, transList: []).padding(.bottom)
         }.frame(maxWidth: .infinity)
             .background(Color.white)
             .cornerRadius(10)

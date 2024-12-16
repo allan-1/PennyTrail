@@ -11,7 +11,7 @@ struct TransactionComponent: View {
     var titleText: String = "Transaction"
     var buttonText: String = "View All"
     var backcolor: Int = 0xFFFFFF
-    let transList = [1,2,3,4,5]
+    let transList: [TransactionModel]
     var body: some View {
         VStack{
             CardHeaderComponents(titleText: titleText, buttonText: buttonText, buttonAction: {}).padding(.all)
@@ -28,6 +28,6 @@ struct TransactionComponent: View {
     }
 }
 
-#Preview {
-    TransactionComponent()
-}
+//#Preview {
+//    TransactionComponent()
+//}

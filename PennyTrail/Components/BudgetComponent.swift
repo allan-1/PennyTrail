@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct BudgetComponent: View {
-    let items = ["Entertainment", "Vacation", "MMF", "General"]
+    let budgetItems: [BudgetModel]
+    var spent: Double
+    var totalMax: Double
     let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible())
@@ -16,9 +18,9 @@ struct BudgetComponent: View {
     var body: some View {
         VStack{
             CardHeaderComponents(titleText: "Budgets", buttonText: "See Details", buttonAction: {}).padding()
-            DonutChart()
+            DonutChart(spent: spent, totalMax: totalMax)
             LazyVGrid(columns: columns, spacing: 16){
-                ForEach(items, id: \.self){
+                ForEach(budgetItems, id: \.self){
                     item in SavedItemComponent().padding(.horizontal)
                 }
             }.padding()
@@ -30,6 +32,6 @@ struct BudgetComponent: View {
     }
 }
 
-#Preview {
-    BudgetComponent()
-}
+//#Preview {
+//    BudgetComponent()
+//}
