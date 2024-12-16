@@ -11,6 +11,8 @@ import SwiftData
 struct TransactionView: View {
     @StateObject private var transactionViewModel: TransactionViewModel
     
+    @State private var isShowingSheet = false
+    
     init(modelContext: ModelContext){
         _transactionViewModel = StateObject(wrappedValue: TransactionViewModel(modelContext: modelContext))
     }
@@ -34,8 +36,8 @@ struct TransactionView: View {
                         }
                     }.padding()
                     LazyVStack{
-                        ForEach(transactionViewModel.transactions, id:\.self){
-                            trans in TransactionItemComponent()
+                        ForEach(transactionViewModel.transactions, id:\.id){
+                            trans in TransactionItemComponent(transactionName: trans.name, transactionCategory: trans.category, transactionAmount: "\(trans.amount)", transactionDate: trans.date)
                         }
                     }.padding()
                     HStack{
@@ -59,10 +61,14 @@ struct TransactionView: View {
             }.background(Color(hex:0xF8F4F0)).navigationTitle("Transactions").toolbar{
                 ToolbarItem(placement: .topBarTrailing){
                     Button{
-                        
+                        isShowingSheet.toggle()
                     }label: {
                         Image(systemName: "plus.circle.fill").font(.title2)
                     }.tint(.black)
+                }
+            }.sheet(isPresented: $isShowingSheet) {
+                AddTransactionSheet(isPresented: $isShowingSheet, transactionViewModel: transactionViewModel).onDisappear {
+                    transactionViewModel.fetchTransactions()
                 }
             }
         }

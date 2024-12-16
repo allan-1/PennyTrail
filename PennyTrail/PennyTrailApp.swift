@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct PennyTrailApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().modelContainer(for: [TransactionModel.self, PotsModel.self, BudgetModel.self])
         }
     }
 }

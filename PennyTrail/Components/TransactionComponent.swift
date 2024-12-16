@@ -16,8 +16,8 @@ struct TransactionComponent: View {
         VStack{
             CardHeaderComponents(titleText: titleText, buttonText: buttonText, buttonAction: {}).padding(.all)
             LazyVStack{
-                ForEach(transList, id:\.self){
-                    trans in TransactionItemComponent()
+                ForEach(transList, id:\.id){
+                    trans in TransactionItemComponent(transactionName: trans.name, transactionCategory: trans.category, transactionAmount: "\(trans.amount)", transactionDate: trans.date)
                 }
             }.padding()
         }.frame(maxWidth: .infinity)
