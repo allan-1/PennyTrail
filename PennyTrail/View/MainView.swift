@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct MainView: View {
+    @Environment(\.modelContext) private var modelContext
     var body: some View {
         TabView{
-            HomeView().tabItem {
+            HomeView(modelContext: modelContext).tabItem {
                 Image(systemName: "house")
             }
-            TransactionView().tabItem {
+            TransactionView(modelContext: modelContext).tabItem {
                 Label("", systemImage: "arrow.up.arrow.down")
             }
             BudgetView().tabItem {

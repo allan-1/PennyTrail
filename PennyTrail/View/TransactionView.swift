@@ -6,10 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct TransactionView: View {
+    @StateObject private var transactionViewModel: TransactionViewModel
+    
+    init(modelContext: ModelContext){
+        _transactionViewModel = StateObject(wrappedValue: TransactionViewModel(modelContext: modelContext))
+    }
     @State private var searchText: String = ""
-    let transList = [1,2,3,4,5]
     var body: some View {
         NavigationStack{
             ZStack{
@@ -29,7 +34,7 @@ struct TransactionView: View {
                         }
                     }.padding()
                     LazyVStack{
-                        ForEach(transList, id:\.self){
+                        ForEach(transactionViewModel.transactions, id:\.self){
                             trans in TransactionItemComponent()
                         }
                     }.padding()
@@ -64,6 +69,6 @@ struct TransactionView: View {
     }
 }
 
-#Preview {
-    TransactionView()
-}
+//#Preview {
+//    TransactionView()
+//}
