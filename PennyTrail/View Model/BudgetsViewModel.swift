@@ -12,10 +12,17 @@ class BudgetsViewModel: ObservableObject{
     @Published var budgets: [BudgetModel] = []
     var modelContext: ModelContext
     
-    init(budgets: [BudgetModel], modelContext: ModelContext) {
+    init(modelContext: ModelContext) {
         self.modelContext = modelContext
-        self.budgets = budgets
         fetchBudgets()
+    }
+    
+    var totalSpent: Double{
+        budgets.reduce(0){$0 + $1.spent}
+    }
+    
+    var totalMax: Double{
+        budgets.reduce(0){$0 + $1.max}
     }
     
     func fetchBudgets(){

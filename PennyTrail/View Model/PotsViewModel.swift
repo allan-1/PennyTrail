@@ -12,10 +12,13 @@ class PotsViewModel: ObservableObject{
     @Published var pots: [PotsModel] = []
     let modelContext: ModelContext
     
-    init(pots: [PotsModel], modelContext: ModelContext) {
-        self.pots = pots
+    init(modelContext: ModelContext) {
         self.modelContext = modelContext
         fetchPots()
+    }
+    
+    var totalSaved: Double{
+        pots.reduce(0){$0 + $1.saved}
     }
     
     func fetchPots(){
