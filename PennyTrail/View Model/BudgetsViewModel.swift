@@ -25,6 +25,14 @@ class BudgetsViewModel: ObservableObject{
         budgets.reduce(0){$0 + $1.max}
     }
     
+    var spentValues: [Double]{
+        budgets.map { $0.spent }
+    }
+    
+    var themeColors: [Int]{
+        budgets.map{$0.theme.color}
+    }
+    
     func fetchBudgets(){
         do{
            budgets = try modelContext.fetch(FetchDescriptor<BudgetModel>())

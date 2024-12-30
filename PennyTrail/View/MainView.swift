@@ -18,7 +18,7 @@ struct MainView: View {
             TransactionView(modelContext: modelContext).tabItem {
                 Label("", systemImage: "arrow.up.arrow.down")
             }
-            BudgetView().tabItem {
+            BudgetView(modelContext: modelContext).tabItem {
                 Label("", systemImage: "chart.pie.fill")
             }
             PotsView().tabItem {

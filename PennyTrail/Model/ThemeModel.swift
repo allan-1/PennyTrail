@@ -13,10 +13,12 @@ class ThemeModel{
     var id: UUID
     var name: String
     var color: Int
+    var isUsed: Bool
     
-    init(id: UUID = UUID(), name: String, color: Int) {
+    init(id: UUID = UUID(), name: String, color: Int, isUsed: Bool = false) {
         self.id = id
         self.name = name
         self.color = color
+        self.isUsed = isUsed
     }
 }

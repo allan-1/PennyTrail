@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct BudgetItemDescription: View {
+    var budgetItem: BudgetModel
     var body: some View {
         VStack(alignment: .leading){
             HStack{
-                Rectangle().frame(width: 20, height: 20).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                Text("Entertainment").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                Rectangle().frame(width: 20, height: 20).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/).foregroundStyle(Color(hex: budgetItem.theme.color))
+                Text("\(budgetItem.category)").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 Spacer()
                 Button{
                     
@@ -20,11 +21,11 @@ struct BudgetItemDescription: View {
                     Image(systemName: "ellipsis").foregroundStyle(Color(.black))
                 }
             }.padding()
-            Text("Maximum of $4,000").font(.callout).foregroundStyle(Color(hex: 0x696868)).padding(.horizontal)
-            ProgressView(value: 0.1).progressViewStyle(CustomProgressBar())
+            Text("Maximum of \(budgetItem.max,  specifier: "%.2f")").font(.callout).foregroundStyle(Color(hex: 0x696868)).padding(.horizontal)
+            ProgressView(value: budgetItem.spent / budgetItem.max).progressViewStyle(CustomProgressBar(themeColor: budgetItem.theme.color))
             HStack{
-                SavedItemComponent()
-                SavedItemComponent()
+                SavedItemComponent(itemName: "Spent", itemAmount: budgetItem.spent, itemColor: budgetItem.theme.color)
+                SavedItemComponent(itemName: "Remainig", itemAmount: budgetItem.max - budgetItem.spent, itemColor: 0xF8F4F0)
             }.padding()
             TransactionComponent(titleText: "Latest Spending", buttonText: "View All", backcolor: 0xF8F4F0, transList: []).padding(.bottom)
         }.frame(maxWidth: .infinity)
@@ -36,6 +37,7 @@ struct BudgetItemDescription: View {
 }
 
 struct CustomProgressBar: ProgressViewStyle {
+    var themeColor: Int
     func makeBody(configuration: Configuration) -> some View {
         ZStack(alignment: .leading) {
             Rectangle()
@@ -49,13 +51,13 @@ struct CustomProgressBar: ProgressViewStyle {
                 )
                 .cornerRadius(4)
                 .padding(.horizontal, 4)
-                .foregroundStyle(Color(hex: 0xF2CDAC))
+                .foregroundStyle(Color(hex: themeColor))
         }
         .cornerRadius(4)
         .padding(.horizontal)
     }
 }
 
-#Preview {
-    BudgetItemDescription()
-}
+//#Preview {
+//    BudgetItemDescription()
+//}

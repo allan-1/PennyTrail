@@ -26,7 +26,7 @@ struct AddTransactionSheet: View {
                 Text("Transaction Date").padding(.horizontal).foregroundStyle(Color(hex: 0x696868))
                 CustomDatePicker(selectedDate: date)
                 Text("Category").padding(.horizontal).foregroundStyle(Color(hex: 0x696868))
-                CustomDropDown(selectedCategory: categoryName)
+                CustomDropDown(selectedCategory: $categoryName)
                 Text("Amount").padding(.horizontal).foregroundStyle(Color(hex: 0x696868))
                 TextField("e.g 1000", text: $amount).keyboardType(.decimalPad).autocorrectionDisabled().padding(.bottom).padding(.horizontal)
                 HStack{

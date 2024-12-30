@@ -43,6 +43,8 @@
 		FA183D682D0DB3400065A61C /* PotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D672D0DB3400065A61C /* PotsModel.swift */; };
 		FA183D6A2D0DB3A90065A61C /* BudgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D692D0DB3A90065A61C /* BudgetModel.swift */; };
 		FA183D6C2D0DC79A0065A61C /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D6B2D0DC79A0065A61C /* TransactionViewModel.swift */; };
+		FA8932B42D1AB2E50050A50C /* AddBudgetSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8932B32D1AB2E50050A50C /* AddBudgetSheet.swift */; };
+		FA8932B62D1ABC5E0050A50C /* ColorDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8932B52D1ABC5E0050A50C /* ColorDropDown.swift */; };
 		FAA06FEA2D0F49370009249A /* PotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA06FE92D0F49370009249A /* PotsViewModel.swift */; };
 		FAA06FEC2D0F4C3E0009249A /* BudgetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA06FEB2D0F4C3E0009249A /* BudgetsViewModel.swift */; };
 		FAA06FEF2D10267D0009249A /* AddTransactionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA06FEE2D10267D0009249A /* AddTransactionSheet.swift */; };
@@ -92,6 +94,8 @@
 		FA183D672D0DB3400065A61C /* PotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsModel.swift; sourceTree = "<group>"; };
 		FA183D692D0DB3A90065A61C /* BudgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetModel.swift; sourceTree = "<group>"; };
 		FA183D6B2D0DC79A0065A61C /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		FA8932B32D1AB2E50050A50C /* AddBudgetSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetSheet.swift; sourceTree = "<group>"; };
+		FA8932B52D1ABC5E0050A50C /* ColorDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDropDown.swift; sourceTree = "<group>"; };
 		FAA06FE92D0F49370009249A /* PotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsViewModel.swift; sourceTree = "<group>"; };
 		FAA06FEB2D0F4C3E0009249A /* BudgetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetsViewModel.swift; sourceTree = "<group>"; };
 		FAA06FEE2D10267D0009249A /* AddTransactionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionSheet.swift; sourceTree = "<group>"; };
@@ -250,6 +254,8 @@
 				FAA06FF02D1029D00009249A /* CustomDatePicker.swift */,
 				FAA06FF22D102A470009249A /* CustomDropDown.swift */,
 				FAA06FEE2D10267D0009249A /* AddTransactionSheet.swift */,
+				FA8932B32D1AB2E50050A50C /* AddBudgetSheet.swift */,
+				FA8932B52D1ABC5E0050A50C /* ColorDropDown.swift */,
 			);
 			path = Sheets;
 			sourceTree = "<group>";
@@ -368,9 +374,11 @@
 				FA183D6C2D0DC79A0065A61C /* TransactionViewModel.swift in Sources */,
 				FA183D292D0ACDD00065A61C /* PotsComponents.swift in Sources */,
 				FA183D412D0C3D1E0065A61C /* BudgetView.swift in Sources */,
+				FA8932B42D1AB2E50050A50C /* AddBudgetSheet.swift in Sources */,
 				FA183D4D2D0C6EAF0065A61C /* BudgetSummary.swift in Sources */,
 				FA183D5D2D0DA9FD0065A61C /* RecurringSummary.swift in Sources */,
 				FA183D5B2D0DA5B70065A61C /* TotalBillsComponent.swift in Sources */,
+				FA8932B62D1ABC5E0050A50C /* ColorDropDown.swift in Sources */,
 				FA183D5F2D0DAACE0065A61C /* BillComponent.swift in Sources */,
 				FAF215932D036B4900031CA6 /* HomeView.swift in Sources */,
 				FA123E5A2D00816100B67006 /* ContentView.swift in Sources */,

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CustomDropDown: View {
-    @State var selectedCategory: String
+    @Binding var selectedCategory: String
         let categories = ["Entertainment", "Bills", "Groceries", "Dinning Out",  "Food", "Travel", "Shopping", "Personal Care", "Lifestyle", "General", "Utilities", "Others"]
         
         var body: some View {

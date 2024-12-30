@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct BudgetSummary: View {
+    var spent: Double
+    var max: Double
+    var spentValues: [Double]
+    var budgets: [BudgetModel]
     var body: some View {
         VStack{
-            DonutChart(spent: 0.0, totalMax: 0.0).padding()
+            DonutChart(spent: spent, totalMax: max, chartData: spentValues, colorThemes: budgets.map{$0.theme.color}).padding()
             VStack(alignment: .leading){
                 Text("Spending Summary").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                BudgetSummaryItem()
-                BudgetSummaryItem()
-                BudgetSummaryItem()
+                LazyVStack(spacing: 16){
+                    ForEach(budgets, id: \.id){
+                        item in BudgetSummaryItem(spent: item.spent, limit: item.max, itemName: item.category, itemTheme: item.theme)
+                    }
+                }.padding()
             }.padding()
         }.frame(maxWidth: .infinity)
             .background(Color.white)
@@ -25,6 +31,6 @@ struct BudgetSummary: View {
     }
 }
 
-#Preview {
-    BudgetSummary()
-}
+//#Preview {
+//    BudgetSummary()
+//}

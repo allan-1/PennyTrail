@@ -18,10 +18,10 @@ struct BudgetComponent: View {
     var body: some View {
         VStack{
             CardHeaderComponents(titleText: "Budgets", buttonText: "See Details", buttonAction: {}).padding()
-            DonutChart(spent: spent, totalMax: totalMax)
+            DonutChart(spent: spent, totalMax: totalMax, chartData: budgetItems.map{$0.spent}, colorThemes: budgetItems.map{$0.theme.color})
             LazyVGrid(columns: columns, spacing: 16){
                 ForEach(budgetItems, id: \.self){
-                    item in SavedItemComponent().padding(.horizontal)
+                    item in SavedItemComponent(itemName: item.category, itemAmount: item.spent, itemColor: item.theme.color).padding(.horizontal)
                 }
             }.padding()
         }.frame(maxWidth: .infinity)

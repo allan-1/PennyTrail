@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct BudgetItemComponent: View {
+    var itemName: String
+    var itemTheme: ThemeModel
     var body: some View {
         HStack{
-            Rectangle().fill(Color(hex: 0x696868)).frame(width: 5, height: 50).clipShape(RoundedRectangle(cornerRadius: 10)).padding(.trailing, 4)
+            Rectangle().fill(Color(hex: itemTheme.color)).frame(width: 4, height: 35).clipShape(RoundedRectangle(cornerRadius: 10)).padding(.trailing, 4)
             VStack{
-                Text("Car").foregroundStyle(Color(hex: 0x696868)).padding(.bottom, 2)
+                Text(itemName).foregroundStyle(Color(hex: 0x696868)).padding(.bottom, 2)
             }
         }.frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
-#Preview {
-    BudgetItemComponent()
-}
+//#Preview {
+//    BudgetItemComponent()
+//}

@@ -36,6 +36,8 @@ struct HomeView: View {
             }.background(Color(hex: 0xF8F4F0)).navigationTitle("Overview")
         }.onAppear{
             transactionViewModel.fetchTransactions()
+            budgetViewModel.fetchBudgets()
+            potsViewModel.fetchPots()
         }
     }
 }
