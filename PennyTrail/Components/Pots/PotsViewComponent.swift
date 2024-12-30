@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct PotsViewComponent: View {
+    var potItem: PotsModel
     var body: some View {
         VStack(alignment: .leading){
             HStack{
-                Rectangle().frame(width: 15, height: 15).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/).padding(.trailing, 8)
-                Text("Vacation").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(.title2)
+                Rectangle().frame(width: 15, height: 15).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/).foregroundStyle(Color(hex: potItem.theme.color)).padding(.trailing, 8)
+                Text(potItem.name).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(.title2)
                 Spacer()
                 Button{
                     
@@ -23,13 +24,13 @@ struct PotsViewComponent: View {
             HStack{
                 Text("Total Saved").foregroundStyle(Color(hex: 0x696868))
                 Spacer()
-                Text("$0.00").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                Text("$\(potItem.saved, specifier: "%.2f")").fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             }.padding()
-            ProgressView(value: 0.6).progressViewStyle(CustomProgressBarStyle())
+            ProgressView(value: potItem.saved / potItem.target).progressViewStyle(CustomProgressBarStyle(themeColor: potItem.theme.color))
             HStack{
-                Text("0.0%").foregroundStyle(Color(hex: 0x696868)).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                Text("\((potItem.saved / potItem.target) * 100, specifier: "%.2f")%").foregroundStyle(Color(hex: 0x696868)).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 Spacer()
-                Text("Target of $10,000.00").foregroundStyle(Color(hex: 0x696868))
+                Text("Target of $\(potItem.target, specifier: "%.2f")").foregroundStyle(Color(hex: 0x696868))
             }.padding()
             HStack{
                 Button{
@@ -53,6 +54,7 @@ struct PotsViewComponent: View {
 }
 
 struct CustomProgressBarStyle: ProgressViewStyle{
+    var themeColor: Int
     func makeBody(configuration: Configuration) -> some View {
         ZStack(alignment: .leading) {
             Rectangle()
@@ -65,13 +67,13 @@ struct CustomProgressBarStyle: ProgressViewStyle{
                     height: 15
                 )
                 .cornerRadius(4)
-                .foregroundStyle(Color(hex: 0xF2CDAC))
+                .foregroundStyle(Color(hex: themeColor))
         }
         .cornerRadius(4)
         .padding(.horizontal)
     }
 }
 
-#Preview {
-    PotsViewComponent()
-}
+//#Preview {
+//    PotsViewComponent()
+//}

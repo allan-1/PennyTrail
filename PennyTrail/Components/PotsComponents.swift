@@ -20,7 +20,7 @@ struct PotsComponents: View {
             SavedComponets(amountSaved: "\(totalSaved)")
             LazyVGrid(columns: columns, spacing: 16){
                 ForEach(potItems, id: \.id){
-                    item in SavedItemComponent(itemName: "", itemAmount: 0.0, itemColor: 0x686969).padding(.horizontal)
+                    item in SavedItemComponent(itemName: item.name, itemAmount: item.saved, itemColor: item.theme.color).padding(.horizontal)
                 }
             }.padding(.bottom)
         }.frame(maxWidth: .infinity)

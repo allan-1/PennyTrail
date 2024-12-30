@@ -22,8 +22,11 @@ struct PotsView: View {
         NavigationStack{
             ZStack{
                 Color(hex:0xF8F4F0)
-                ScrollView{ VStack{
-                    PotsViewComponent()
+                ScrollView{
+                    LazyVStack{
+                        ForEach(potsViewModel.pots, id:\.id){ pot in
+                            PotsViewComponent(potItem: pot)
+                        }
                 }
                 }
             }.background(Color(hex:0xF8F4F0)).navigationTitle("Pots").toolbar{
