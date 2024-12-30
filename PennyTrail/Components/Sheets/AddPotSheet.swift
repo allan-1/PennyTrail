@@ -12,6 +12,9 @@ struct AddPotSheet: View {
     @State private var potName: String = ""
     @State private var amount: String = ""
     @State private var themeColor: ThemeModel = ThemeModel(name: "Red", color: 0xFF0000)
+    
+    var potsViewModel: PotsViewModel
+    
     var body: some View {
         ScrollView{
             VStack(alignment: .leading){
@@ -24,6 +27,7 @@ struct AddPotSheet: View {
                 Text("Theme").padding(.horizontal).foregroundStyle(Color(hex: 0x696868))
                 ColorDropDown(selectedColor: $themeColor)
                 Button{
+                    potsViewModel.addPot(name: potName, saved: 0.0, target: Double(amount) ?? 0.0, theme: themeColor)
                     isPresented = false
                 } label: {
                     Text("Add Pot").fontWeight(.bold).frame(maxWidth: .infinity)

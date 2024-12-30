@@ -21,7 +21,7 @@ struct MainView: View {
             BudgetView(modelContext: modelContext).tabItem {
                 Label("", systemImage: "chart.pie.fill")
             }
-            PotsView().tabItem {
+            PotsView(modelContext: modelContext).tabItem {
                 Label("", systemImage: "bag.fill")
             }
             RecurringBillView().tabItem { Label("", systemImage: "line.3.horizontal.button.angledtop.vertical.right.fill") }

@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct PotsView: View {
     
+    @StateObject var potsViewModel: PotsViewModel
+    
     @State private var isShowingSheet = false
+    
+    init(modelContext: ModelContext){
+        _potsViewModel = StateObject(wrappedValue: PotsViewModel(modelContext: modelContext))
+    }
     
     var body: some View {
         NavigationStack{
@@ -28,12 +35,12 @@ struct PotsView: View {
                     }.tint(.black)
                 }
             }.sheet(isPresented: $isShowingSheet) {
-                AddPotSheet(isPresented: $isShowingSheet)
+                AddPotSheet(isPresented: $isShowingSheet, potsViewModel: potsViewModel)
                 }
         }
     }
 }
 
-#Preview {
-    PotsView()
-}
+//#Preview {
+//    PotsView()
+//}
