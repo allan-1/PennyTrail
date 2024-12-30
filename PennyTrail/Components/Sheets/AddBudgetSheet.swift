@@ -30,7 +30,7 @@ struct AddBudgetSheet: View {
                     budgetViewModel.addBudget(category: categoryName, spent: 0.0, max: Double(amount) ?? 0.0, theme: themeColor)
                     isPresented = false
                 } label: {
-                    Text("Submit").fontWeight(.bold).frame(maxWidth: .infinity)
+                    Text("Add Budget").fontWeight(.bold).frame(maxWidth: .infinity)
                 }.buttonStyle(.borderedProminent).tint(.black).padding(.bottom, 32).padding(.horizontal)
             }.textFieldStyle(.roundedBorder)
         }

@@ -43,6 +43,7 @@
 		FA183D682D0DB3400065A61C /* PotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D672D0DB3400065A61C /* PotsModel.swift */; };
 		FA183D6A2D0DB3A90065A61C /* BudgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D692D0DB3A90065A61C /* BudgetModel.swift */; };
 		FA183D6C2D0DC79A0065A61C /* TransactionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA183D6B2D0DC79A0065A61C /* TransactionViewModel.swift */; };
+		FA4DFED42D22BF5A007A643C /* AddPotSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4DFED32D22BF5A007A643C /* AddPotSheet.swift */; };
 		FA8932B42D1AB2E50050A50C /* AddBudgetSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8932B32D1AB2E50050A50C /* AddBudgetSheet.swift */; };
 		FA8932B62D1ABC5E0050A50C /* ColorDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8932B52D1ABC5E0050A50C /* ColorDropDown.swift */; };
 		FAA06FEA2D0F49370009249A /* PotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA06FE92D0F49370009249A /* PotsViewModel.swift */; };
@@ -94,6 +95,7 @@
 		FA183D672D0DB3400065A61C /* PotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsModel.swift; sourceTree = "<group>"; };
 		FA183D692D0DB3A90065A61C /* BudgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetModel.swift; sourceTree = "<group>"; };
 		FA183D6B2D0DC79A0065A61C /* TransactionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewModel.swift; sourceTree = "<group>"; };
+		FA4DFED32D22BF5A007A643C /* AddPotSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPotSheet.swift; sourceTree = "<group>"; };
 		FA8932B32D1AB2E50050A50C /* AddBudgetSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetSheet.swift; sourceTree = "<group>"; };
 		FA8932B52D1ABC5E0050A50C /* ColorDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDropDown.swift; sourceTree = "<group>"; };
 		FAA06FE92D0F49370009249A /* PotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotsViewModel.swift; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				FAA06FEE2D10267D0009249A /* AddTransactionSheet.swift */,
 				FA8932B32D1AB2E50050A50C /* AddBudgetSheet.swift */,
 				FA8932B52D1ABC5E0050A50C /* ColorDropDown.swift */,
+				FA4DFED32D22BF5A007A643C /* AddPotSheet.swift */,
 			);
 			path = Sheets;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				FAA06FF32D102A470009249A /* CustomDropDown.swift in Sources */,
 				FA183D332D0BF6C70065A61C /* TransactionComponent.swift in Sources */,
 				FA183D4A2D0C5ED00065A61C /* SearchFieldComponent.swift in Sources */,
+				FA4DFED42D22BF5A007A643C /* AddPotSheet.swift in Sources */,
 				FA183D582D0C90800065A61C /* ComparableExtension.swift in Sources */,
 				FAA06FEA2D0F49370009249A /* PotsViewModel.swift in Sources */,
 				FAF215952D036BE300031CA6 /* SummaryCardComponent.swift in Sources */,

@@ -43,7 +43,7 @@ struct ColorDropDown: View {
                 )
             }
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 

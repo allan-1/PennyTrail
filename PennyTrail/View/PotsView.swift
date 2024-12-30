@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PotsView: View {
+    
+    @State private var isShowingSheet = false
+    
     var body: some View {
         NavigationStack{
             ZStack{
@@ -19,12 +22,14 @@ struct PotsView: View {
             }.background(Color(hex:0xF8F4F0)).navigationTitle("Pots").toolbar{
                 ToolbarItem(placement: .topBarTrailing){
                     Button{
-                        
+                        isShowingSheet.toggle()
                     }label: {
                         Image(systemName: "plus.circle.fill").font(.title2)
                     }.tint(.black)
                 }
-            }
+            }.sheet(isPresented: $isShowingSheet) {
+                AddPotSheet(isPresented: $isShowingSheet)
+                }
         }
     }
 }
