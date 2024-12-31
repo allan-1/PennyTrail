@@ -36,9 +36,17 @@ class PotsViewModel: ObservableObject{
         fetchPots()
     }
     
-    func updatePot(saved: Double, target: Double, pot: PotsModel){
-        pot.saved = saved
+    func updatePot(name: String, target: Double, theme: ThemeModel, pot: PotsModel){
         pot.target = target
+        pot.theme = theme
+        pot.name = name
+        savePot()
+        fetchPots()
+    }
+    
+    func addMoney(saved: Double, pot: PotsModel){
+        let newAmount = pot.saved + saved
+        pot.saved = newAmount
         savePot()
         fetchPots()
     }

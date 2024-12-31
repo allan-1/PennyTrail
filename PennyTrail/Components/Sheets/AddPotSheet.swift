@@ -34,7 +34,6 @@ struct AddPotSheet: View {
                 }.buttonStyle(.borderedProminent).tint(.black).padding(.bottom, 32).padding(.horizontal).padding(.top)
             }.textFieldStyle(.roundedBorder)
         }
-
     }
 }
 

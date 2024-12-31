@@ -25,7 +25,7 @@ struct PotsView: View {
                 ScrollView{
                     LazyVStack{
                         ForEach(potsViewModel.pots, id:\.id){ pot in
-                            PotsViewComponent(potItem: pot)
+                            PotsViewComponent(potItem: pot, potsViewModel: potsViewModel)
                         }
                 }
                 }

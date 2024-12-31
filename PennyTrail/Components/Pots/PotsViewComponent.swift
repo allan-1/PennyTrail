@@ -9,7 +9,10 @@ import SwiftUI
 
 struct PotsViewComponent: View {
     var potItem: PotsModel
+    var potsViewModel: PotsViewModel
+    @State var showAddMoney: Bool = false
     var body: some View {
+        var isWithdraw: Bool = false
         VStack(alignment: .leading){
             HStack{
                 Rectangle().frame(width: 15, height: 15).clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/).foregroundStyle(Color(hex: potItem.theme.color)).padding(.trailing, 8)
@@ -34,13 +37,15 @@ struct PotsViewComponent: View {
             }.padding()
             HStack{
                 Button{
-                    
+                    isWithdraw = false
+                    showAddMoney.toggle()
                 }label: {
                     Text("+ Add Money").padding(10).foregroundStyle(Color(hex: 0x201F24)).fontWeight(.bold)
                 }.buttonStyle(.borderedProminent).tint(Color(hex: 0xF8F4F0))
                 Spacer()
                 Button{
-                    
+                    isWithdraw = true
+                    showAddMoney.toggle()
                 }label: {
                     Text("Withdraw").padding(.vertical, 10).padding(.horizontal, 20).foregroundStyle(Color(hex: 0x201F24)).fontWeight(.bold)
                 }.buttonStyle(.borderedProminent).tint(Color(hex: 0xF8F4F0))
@@ -49,7 +54,9 @@ struct PotsViewComponent: View {
             .background(Color.white)
             .cornerRadius(10)
             .shadow(radius: 0)
-            .padding(.horizontal, 20)
+            .padding(.horizontal, 20).sheet(isPresented: $showAddMoney){
+                AddMoneySheet(potsViewModel: potsViewModel, isWithdraw: isWithdraw, potItem: potItem, isPresented: $showAddMoney)
+            }
     }
 }
 
