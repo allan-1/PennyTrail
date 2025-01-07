@@ -10,11 +10,13 @@ import SwiftData
 
 class BudgetsViewModel: ObservableObject{
     @Published var budgets: [BudgetModel] = []
+    private var transactions: [TransactionModel] = []
     var modelContext: ModelContext
     
     init(modelContext: ModelContext) {
         self.modelContext = modelContext
         fetchBudgets()
+        fetchTransactions()
     }
     
     var totalSpent: Double{
@@ -38,6 +40,14 @@ class BudgetsViewModel: ObservableObject{
            budgets = try modelContext.fetch(FetchDescriptor<BudgetModel>())
         }catch{
             print("failed to fetch budget: \(error)")
+        }
+    }
+    
+    func fetchTransactions(){
+        do{
+            transactions = try modelContext.fetch(FetchDescriptor<TransactionModel>())
+        }catch{
+            print("failed to fetch transactions: \(error)")
         }
     }
     
@@ -68,4 +78,9 @@ class BudgetsViewModel: ObservableObject{
             print("Failed to save: \(error)")
         }
     }
+    
+    func fetchBudgetTransaction(by category: String) -> [TransactionModel] {
+        return transactions.filter{$0.category == category}
+    }
+    
 }

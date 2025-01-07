@@ -25,7 +25,8 @@ struct BudgetView: View {
                     BudgetSummary(spent: budgetViewModel.totalSpent, max: budgetViewModel.totalMax, spentValues: budgetViewModel.spentValues, budgets: budgetViewModel.budgets).padding(.bottom)
                     LazyVStack{
                         ForEach(budgetViewModel.budgets, id: \.id){budget in
-                            BudgetItemDescription(budgetItem: budget, buttonAction: {self.tab = .TransactionView})
+                            let budgetTransaction = budgetViewModel.fetchBudgetTransaction(by: budget.category)
+                            BudgetItemDescription(budgetItem: budget, budgetTransactions: budgetTransaction, buttonAction: {self.tab = .TransactionView})
                         }
                     }
                 }
