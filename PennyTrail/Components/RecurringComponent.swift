@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct RecurringComponent: View {
+    var buttonAction: () -> Void
+    
     var body: some View {
         VStack{
-            CardHeaderComponents(titleText: "Recurring Bills", buttonText: "See Details", buttonAction: {}).padding()
+            CardHeaderComponents(titleText: "Recurring Bills", buttonText: "See Details", buttonAction: buttonAction).padding()
             RecurringItemComponent(colorHex: 0x277C78, itemTitle: "Paid Bills")
             RecurringItemComponent(colorHex: 0xF2CDAC, itemTitle: "Total Upcoming")
             RecurringItemComponent(colorHex: 0x82C9D7, itemTitle: "Due Soon").padding(.bottom)
@@ -22,6 +24,6 @@ struct RecurringComponent: View {
     }
 }
 
-#Preview {
-    RecurringComponent()
-}
+//#Preview {
+//    RecurringComponent()
+//}

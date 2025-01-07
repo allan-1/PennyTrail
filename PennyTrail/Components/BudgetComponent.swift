@@ -15,9 +15,11 @@ struct BudgetComponent: View {
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
+    var buttonAction: () -> Void
+    
     var body: some View {
         VStack{
-            CardHeaderComponents(titleText: "Budgets", buttonText: "See Details", buttonAction: {}).padding()
+            CardHeaderComponents(titleText: "Budgets", buttonText: "See Details", buttonAction: buttonAction).padding()
             DonutChart(spent: spent, totalMax: totalMax, chartData: budgetItems.map{$0.spent}, colorThemes: budgetItems.map{$0.theme.color})
             LazyVGrid(columns: columns, spacing: 16){
                 ForEach(budgetItems, id: \.self){

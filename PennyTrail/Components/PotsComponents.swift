@@ -10,13 +10,14 @@ import SwiftUI
 struct PotsComponents: View {
     let potItems: [PotsModel]
     var totalSaved: Double
+    var buttonAction: () -> Void
     let columns: [GridItem] = [
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
     var body: some View {
         VStack{
-            CardHeaderComponents(titleText: "Pots", buttonText: "See Details", buttonAction: {}).padding()
+            CardHeaderComponents(titleText: "Pots", buttonText: "See Details", buttonAction: buttonAction).padding()
             SavedComponets(amountSaved: "\(totalSaved)")
             LazyVGrid(columns: columns, spacing: 16){
                 ForEach(potItems, id: \.id){

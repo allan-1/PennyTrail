@@ -8,23 +8,46 @@
 import SwiftUI
 import SwiftData
 
+enum Tab{
+    case HomeView
+    case TransactionView
+    case BudgetView
+    case PotsView
+    case ReccuringView
+}
+
 struct MainView: View {
     @Environment(\.modelContext) private var modelContext
+    @State var selection: Tab = .HomeView
     var body: some View {
-        TabView{
-            HomeView(modelContext: modelContext).tabItem {
+        TabView(selection: $selection){
+            NavigationStack{
+                HomeView(modelContext: modelContext, tab: $selection)
+            }.tabItem {
                 Image(systemName: "house")
-            }
-            TransactionView(modelContext: modelContext).tabItem {
+            }.tag(Tab.HomeView)
+            
+            NavigationStack{
+                TransactionView(modelContext: modelContext)
+            }.tabItem {
                 Label("", systemImage: "arrow.up.arrow.down")
-            }
-            BudgetView(modelContext: modelContext).tabItem {
+            }.tag(Tab.TransactionView)
+            
+            NavigationStack{
+                BudgetView(modelContext: modelContext, tab: $selection)
+            }.tabItem {
                 Label("", systemImage: "chart.pie.fill")
-            }
-            PotsView(modelContext: modelContext).tabItem {
+            }.tag(Tab.BudgetView)
+            
+            NavigationStack{
+                PotsView(modelContext: modelContext)
+            }.tabItem {
                 Label("", systemImage: "bag.fill")
-            }
-            RecurringBillView().tabItem { Label("", systemImage: "line.3.horizontal.button.angledtop.vertical.right.fill") }
+            }.tag(Tab.PotsView)
+            
+            NavigationStack{
+                RecurringBillView()
+            }.tabItem { Label("", systemImage: "line.3.horizontal.button.angledtop.vertical.right.fill") }.tag(Tab.ReccuringView)
         }
     }
 }

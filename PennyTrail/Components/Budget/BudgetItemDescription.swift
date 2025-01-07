@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BudgetItemDescription: View {
     var budgetItem: BudgetModel
+    var buttonAction: () -> Void
     var body: some View {
         VStack(alignment: .leading){
             HStack{
@@ -27,7 +28,7 @@ struct BudgetItemDescription: View {
                 SavedItemComponent(itemName: "Spent", itemAmount: budgetItem.spent, itemColor: budgetItem.theme.color)
                 SavedItemComponent(itemName: "Remainig", itemAmount: budgetItem.max - budgetItem.spent, itemColor: 0xF8F4F0)
             }.padding()
-            TransactionComponent(titleText: "Latest Spending", buttonText: "View All", backcolor: 0xF8F4F0, transList: []).padding(.bottom)
+            TransactionComponent(titleText: "Latest Spending", buttonText: "View All", backcolor: 0xF8F4F0, transList: [], buttonAction: buttonAction).padding(.bottom)
         }.frame(maxWidth: .infinity)
             .background(Color.white)
             .cornerRadius(10)

@@ -12,9 +12,11 @@ struct TransactionComponent: View {
     var buttonText: String = "View All"
     var backcolor: Int = 0xFFFFFF
     let transList: [TransactionModel]
+    var buttonAction: () -> Void
+    
     var body: some View {
         VStack{
-            CardHeaderComponents(titleText: titleText, buttonText: buttonText, buttonAction: {}).padding(.all)
+            CardHeaderComponents(titleText: titleText, buttonText: buttonText, buttonAction: buttonAction).padding(.all)
             LazyVStack{
                 ForEach(transList, id:\.id){
                     trans in TransactionItemComponent(transactionName: trans.name, transactionCategory: trans.category, transactionAmount: "\(trans.amount)", transactionDate: trans.date)

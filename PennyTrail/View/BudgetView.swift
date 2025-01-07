@@ -10,11 +10,12 @@ import SwiftData
 
 struct BudgetView: View {
     @StateObject private var budgetViewModel: BudgetsViewModel
-    
+    @Binding var tab: Tab
     @State private var isShowingSheet = false
     
-    init(modelContext: ModelContext){
+    init(modelContext: ModelContext, tab: Binding<Tab>){
         _budgetViewModel = StateObject(wrappedValue: BudgetsViewModel(modelContext: modelContext))
+        _tab = tab
     }
     var body: some View {
         NavigationStack{
@@ -24,7 +25,7 @@ struct BudgetView: View {
                     BudgetSummary(spent: budgetViewModel.totalSpent, max: budgetViewModel.totalMax, spentValues: budgetViewModel.spentValues, budgets: budgetViewModel.budgets).padding(.bottom)
                     LazyVStack{
                         ForEach(budgetViewModel.budgets, id: \.id){budget in
-                            BudgetItemDescription(budgetItem: budget)
+                            BudgetItemDescription(budgetItem: budget, buttonAction: {self.tab = .TransactionView})
                         }
                     }
                 }
